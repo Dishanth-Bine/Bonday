@@ -12,7 +12,7 @@ const handler = NextAuth({
     })
   ],
   
-  callbacks: {
+  callback: {
     async session({ session }) {
       // store the user id from MongoDB to session
       const sessionUser = await User.findOne({ email: session.user.email });
