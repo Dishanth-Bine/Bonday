@@ -7,7 +7,8 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         <span className='blue_gradient'>{type} Post</span>
       </h1>
       <p className='desc text-left max-w-md'>
-        {type} and share amazing Roars with the world
+        {type} and share amazing prompts with the world, and let your
+        imagination run wild with any AI-powered platform
       </p>
 
       <form
@@ -16,7 +17,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       >
         <label>
           <span className='font-satoshi font-semibold text-base text-gray-700'>
-            Your Roar 
+            Your AI Prompt
           </span>
 
           <textarea
@@ -32,7 +33,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
           <span className='font-satoshi font-semibold text-base text-gray-700'>
             Field of Prompt{" "}
             <span className='font-normal'>
-              (#product, #webdevolopment, #idea, etc.)
+              (#product, #webdevelopment, #idea, etc.)
             </span>
           </span>
           <input
@@ -55,7 +56,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             disabled={submitting}
             className='px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white'
           >
-            {submitting ? (type === 'Create' ? 'Creating' : `${type}ing`) : type}
+            {submitting ? `${type}ing...` : type}
           </button>
         </div>
       </form>
