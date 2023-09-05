@@ -1,4 +1,4 @@
-import Link from "next/link";
+  import Link from "next/link";
 
 const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
@@ -16,7 +16,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       >
         <label>
           <span className='font-satoshi font-semibold text-base text-gray-700'>
-            Your ROAR   
+            Your ROAR 
 
           <textarea
             value={post.prompt}
