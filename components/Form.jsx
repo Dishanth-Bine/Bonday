@@ -1,4 +1,4 @@
-  import Link from "next/link";
+ import Link from "next/link";
 
 const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
@@ -7,7 +7,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         <span className='blue_gradient'>{type} Post</span>
       </h1>
       <p className='desc text-left max-w-md'>
-        {type} and share amazing Roars with the world.
+        {type} and share amazing roars
       </p>
 
       <form
@@ -16,8 +16,9 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       >
         <label>
           <span className='font-satoshi font-semibold text-base text-gray-700'>
-            Your ROAR 
+            Your AI Roar
           </span>
+
           <textarea
             value={post.prompt}
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
@@ -63,3 +64,4 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 };
 
 export default Form;
+
