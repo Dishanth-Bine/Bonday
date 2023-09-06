@@ -27,6 +27,7 @@ const Nav = () => {
           width={100}
           height={100}
           className='object-contain'
+          loading = 'eager'
         />
         <p className='logo_text'>BONDAY</p>
       </Link>
@@ -50,6 +51,7 @@ const Nav = () => {
                 height={37}
                 className='rounded-full'
                 alt='profile'
+                loading = 'eager'
               />
             </Link>
           </div>
@@ -82,6 +84,7 @@ const Nav = () => {
               height={37}
               className='rounded-full'
               alt='profile'
+              loading = 'eager'
               onClick={() => setToggleDropdown(!toggleDropdown)}
             />
 
